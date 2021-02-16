@@ -1,0 +1,19 @@
+.presentacion-img {
+    @include position_center; 
+}
+.presentacion-text {
+   color: $text-color-primary;
+   font-family: 'Lato'; 
+   text-align: center;
+}
+.iconos-header {
+    color: $text-color-primary;
+    font-size: 255%;
+    border-bottom: 1px solid orangered;
+    text-align: center;
+    & li {
+        list-style: none;
+        display: inline;
+        word-spacing: 5%;
+    }
+}

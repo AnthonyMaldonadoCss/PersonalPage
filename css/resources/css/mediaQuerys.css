@@ -1,0 +1,230 @@
+/*big tablet to 1200px (widths smaller tath the 1140px row) */
+@media only screen and (max-width: 1200px) {
+	
+	.presentacion-img{ width: 100%; padding: 5% 2%;}
+
+	.row { padding: 5% 2%; }
+
+	.concretemos_js {visibility: hidden;}
+	.concretemos { visibility: visible; }	
+}
+
+
+/*Small tablet to big tablet: from 768px to 1023px*/
+@media only screen and (max-width: 1023px){
+
+	body{font-size: 18px; margin: auto;}
+	section { padding: 0px 0; }
+	.long-copy {width: 80%; margin-left: 10%}
+	
+	.header_body {
+		height: 70vh; 
+		width: 655px;
+		margin: auto;
+		padding: 5px;
+	}
+
+	
+	.areas_interes {
+		height: 35vh; 
+		width: 655px;
+		margin: auto;
+		padding: 5px;
+	}
+
+	.donde {
+		height: 55vh; 
+		width: 655px;
+		margin: auto;
+		padding: 5px;
+	}
+	.donde ul {
+		margin-left: 35px
+	}
+	.Test {
+		height: 195vh; 
+		width: 655px;
+		margin: auto;
+		padding: 0px;
+	}
+	.concretemos {
+		height: 45vh; 
+		width: 655px;
+		margin: auto;
+		padding: 5px;
+	}
+	.cerrado  { 
+		width: 109.5%;
+		margin-left: 25px; 
+	}
+
+	.concretemos_js {visibility: hidden;}
+
+	.final {
+		height: 35vh; 
+		width: 655px;
+		margin: auto;
+		padding: 5px;
+	}
+	.final p{
+		width: 455px;
+	}
+}
+
+
+/*Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+	
+	body{font-size: 15px; margin: auto;}
+	section { padding: 0em 0em }
+	
+	.long-copy {
+		width: 90%; 
+		margin:auto;
+	}
+	
+	.header_body {
+		height: 75vh; 
+		width: 555px;
+		margin: auto;
+	}
+	.presentacion-text {
+		margin-top: 35px;
+	}
+
+
+	.Test {
+		height: 230vh; 
+		width: 555px;
+		margin: auto;
+		padding: 5px;
+	}
+	.concretemos {
+		height: 85vh; 
+		width: 555px;
+		margin: auto;
+		padding: 5px;
+	}
+	.cerrado  { 
+		width: 115%;
+		margin-left: 10px; 
+	}
+
+	.donde {
+		height: 25vh; 
+		width: 555px;
+		margin: auto;
+		padding: 5px;
+	}
+	.donde ul {
+		margin-left: 35px;
+	}
+
+	.areas_interes {
+		height: 85vh; 
+		width: 555px;
+		margin: auto;
+		padding: 5px;
+	}
+	.areas_interes p {
+		width: 455px;
+		margin: auto;
+		margin-top: 35px;
+	}
+	.final {
+		height: 55vh; 
+		width: 555px;
+		margin: auto;
+		padding: 5px;
+	}
+	.final p{width: 455px;}
+
+	.concretemos_js {visibility: hidden;}
+
+}	
+
+/*Small phones: from 0px to 480px*/
+@media only screen and 	(max-width: 480px) {
+
+	body{ font-size: 13px; margin: auto; }
+	section {padding: 0em 0em;}
+
+	h2{ 
+		text-align: center;
+		border-bottom: 2px solid #eb4d4b;
+		width: 220px;
+		margin: auto;
+		line-height: 2.2; 
+	}
+	
+	.header_body {
+		height: 65vh; 
+		width: 405px;
+		margin: auto;
+	}
+	.long-copy {
+		width: 95%; 
+		margin:auto;
+	}
+	
+	.presentacion-text {
+		margin-top: 35px;
+	}
+
+	.Test {
+		height: 230vh; 
+		width: 405px;
+		margin: auto;
+		padding: 5px;
+	}
+	.concretemos {
+		height: 43vh; 
+		width: 405px;
+		margin: auto;
+		padding: 5px;
+	}
+	.concretemos_js{
+		
+		font-size: 10px;
+		visibility:visible;
+		padding: 0.5em 2em 1em;
+		display: inline-block;
+		list-style: inside;
+	}
+	.concretemos_js b {
+		text-align: center;
+	}
+	.col {width: 405px}
+
+	.donde {
+		height: 65vh; 
+		width: 405px;
+		margin: auto;
+		padding: 5px;
+	}
+	.donde ul {
+		margin-left: 2px;
+	}
+
+	.areas_interes {
+		height: 55vh; 
+		width: 405px;
+		margin: auto;
+		padding: 5px;
+	}
+	.areas_interes p {
+		width: 355px;
+		margin: auto;
+		margin-top: 35px;
+	}
+	.final {
+		height: 45vh; 
+		width: 405px;
+		margin: auto;
+		padding: 5px;
+	}
+	.final p{width: 355px;}
+
+	
+	.cerrado {visibility: collapse;}
+}

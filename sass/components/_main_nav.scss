@@ -1,0 +1,23 @@
+.main__nav {
+    text-align: center;
+    font-family: 'Lato';
+    float: right;
+    
+    &--list li {
+        list-style: none;
+        display: inline; 
+        text-transform: uppercase;
+        padding-left: inherit;
+    }
+
+    &--list a {
+        text-decoration: none;
+        color: $text-color;
+        transition: all .3s;
+    }
+
+    &--list a:hover {
+        color: ivory;
+        font-weight: 300;
+    }   
+}

@@ -1,0 +1,119 @@
+.biography {
+  padding: 1%;
+  background-color: #f8f8f8;
+}
+
+.Test {
+  font-family: "Lato";
+  background-image: linear-gradient(to right bottom, #30E8BF, #FF8235);
+  position: relative;
+  top: -5%;
+  border-radius: 0.5%;
+}
+.Test span {
+  color: #f1f2f6;
+  font-family: "Lato";
+  font-size: 100%;
+  text-align: center;
+}
+.Test--short-copy {
+  font-family: "Lato";
+  text-align: center;
+  line-height: 2rem;
+  font-size: 100%;
+}
+.Test--long-copy {
+  font-family: "Lato";
+  font-size: 100%;
+  text-align: justify;
+  padding: 1%;
+  line-height: 2rem;
+}
+
+.IUJO {
+  background-image: linear-gradient(rgba(62, 67, 72, 0.7), rgba(62, 67, 72, 0.7)), url(/../../css/resources/img/computer-1245714_640.jpg);
+  height: 55%;
+}
+.IUJO--medium-copy {
+  text-align: justify;
+  padding: 1%;
+  line-height: 1.5rem;
+}
+.IUJO--icon {
+  text-align: center;
+  font-size: 255%;
+  width: 35%;
+  margin-left: 33%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+}
+
+.IUJO h3 {
+  color: #f1f2f6;
+  font-family: "Lato";
+  font-size: 100%;
+  text-align: center;
+}
+
+.presentacion-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.presentacion-text {
+  color: #f1f2f6;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.iconos-header {
+  color: #f1f2f6;
+  font-size: 255%;
+  border-bottom: 1px solid orangered;
+  text-align: center;
+}
+.iconos-header li {
+  list-style: none;
+  display: inline;
+  word-spacing: 5%;
+}
+
+.main__nav {
+  text-align: center;
+  font-family: "Lato";
+  float: right;
+}
+.main__nav--list li {
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  padding-left: inherit;
+}
+.main__nav--list a {
+  text-decoration: none;
+  color: #3E4348;
+  transition: all 0.3s;
+}
+.main__nav--list a:hover {
+  color: ivory;
+  font-weight: 300;
+}
+
+header {
+  padding: 1%;
+  background-color: #f8f8f8;
+}
+
+.header_body {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: color;
+  padding: 2%;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #30E8BF, #FF8235), url(/../../css/resources/img/fondo_principal.JPG);
+  border-radius: 0.5%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin backdoor {
+    //background-image: linear-gradient(to right bottom #E0EAFC,#CFDEF3);
+    padding: 1%;
+	background-color: #f8f8f8;
+}
+
+@mixin position_center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin position_center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
