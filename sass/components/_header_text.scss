@@ -4,16 +4,15 @@
 .presentacion-text {
    color: $text-color-primary;
    font-family: 'Lato'; 
-   text-align: center;
+    text-align: center;
 }
 .iconos-header {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-between;
     color: $text-color-primary;
     font-size: 255%;
-    border-bottom: 1px solid orangered;
-    text-align: center;
     & li {
         list-style: none;
-        display: inline;
-        word-spacing: 5%;
     }
 }

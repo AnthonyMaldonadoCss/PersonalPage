@@ -1,11 +1,11 @@
 .biography {
+   position: absolute;
     @include backdoor; 
 }
 .Test {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     background-image: linear-gradient(to right bottom, $color-test, $color-test-1);
     position: relative;
-    top: -5%;
     border-radius: .5%;
 
     & span { //titulos h2
@@ -30,31 +30,39 @@
     }
 }
 
-.IUJO {
+.flex {
+    display: flex;
+    background-color: gray;
+    flex-flow: row;
+    justify-content: space-around;
+    height:100vh;
+    align-items: stretch;
 
-    background-image: linear-gradient(rgba($text-color, 0.7), rgba($text-color, 0.7)), url(/../../css/resources/img/computer-1245714_640.jpg);
-    height: 55%;
-
-    &--medium-copy {
-        text-align: justify;
-        padding: 1%;
-        line-height: 1.5rem;
+    &--child__first{
+        padding: 5px;
+        margin: 5px;
+        background-color: orangered;
+        flex-flow: wrap;
     }
-
-    &--icon {
+    &--child__first--tittle {
         text-align: center;
-        font-size: 255%;
-        width: 35%;
-        margin-left: 33%;
-        background-color: rgba($color: #000000, $alpha: .2);
-        border-radius: 5%;
+    }
+    &--child__first--descripcion{
+        text-align: justify;
+    }
+}
+.child{
+    &--1{
+    }
+    
+    &--2 {
+        order: 3;
+    }
+    
+    &--3{
+        order: 2;
     }
 }
 
-.IUJO h3{
-    color: $text-color-primary;
-    font-family: 'Lato';
-    font-size: 100%;
-    text-align: center;
-}
+
 
