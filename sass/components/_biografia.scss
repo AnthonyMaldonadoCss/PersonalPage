@@ -1,68 +1,85 @@
+ul {
+  list-style-image: url(../img/iconmonstr-check-mark-thin-240.png);
+  height: 10%;
+}
 .biography {
-   position: absolute;
-    @include backdoor; 
+  position: absolute;
+  @include backdoor;
 }
 .Test {
-    font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(to right bottom, $color-test, $color-test-1);
-    position: relative;
-    border-radius: .5%;
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-test,
+    $color-test-1
+  );
+  position: relative;
+  border-radius: 0.5%;
 
-    & span { //titulos h2
-        color: $text-color-primary;
-        font-family: 'Lato';
-        font-size: 100%;
-        text-align: center;
-    }
-    &--short-copy {
-        font-family: 'Lato';
-        text-align: center;
-        line-height: 2rem;
-        font-size: 100%;
-    }
+  & span {
+    //titulos h2
+    color: $text-color-primary;
+    font-family: "Lato";
+    font-size: 100%;
+    text-align: center;
+  }
+  &--short-copy {
+    font-family: "Lato";
+    text-align: center;
+    line-height: 2rem;
+    font-size: 100%;
+  }
 
-    &--long-copy {
-        font-family: 'Lato';
-        font-size: 100%;
-        text-align: justify;
-        padding: 1%;
-        line-height: 2rem;
-    }
+  &--long-copy {
+    font-family: "Lato";
+    font-size: 100%;
+    text-align: center;
+    padding: 1%;
+    line-height: 2rem;
+  }
 }
 
 .flex {
+  display: flex;
+  background-color: gray;
+  flex-flow: column;
+  justify-content: space-around;
+  //   height: 50vh;
+  align-items: normal;
+
+  &--child__first {
+    padding: 5px;
+    margin: 5px;
+    background-color: orangered;
+    flex-flow: wrap;
+  }
+  &--child__first--tittle {
+    text-align: center;
+  }
+  &--child__first--descripcion {
+    text-align: justify;
+  }
+}
+.child {
+  &--1 {
+    order: 1;
     display: flex;
-    background-color: gray;
-    flex-flow: row;
-    justify-content: space-around;
-    height:100vh;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &--child__first{
-        padding: 5px;
-        margin: 5px;
-        background-color: orangered;
-        flex-flow: wrap;
+  &--2 {
+    order: 2;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
-    &--child__first--tittle {
-        text-align: center;
-    }
-    &--child__first--descripcion{
-        text-align: justify;
-    }
+  }
+
+  &--3 {
+    order: 3;
+  }
 }
-.child{
-    &--1{
-    }
-    
-    &--2 {
-        order: 3;
-    }
-    
-    &--3{
-        order: 2;
-    }
-}
-
-
-

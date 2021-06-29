@@ -1,13 +1,26 @@
+/*@mixin general-tables {
+	list-style: none;
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 100%;
+	color:$text-color-primary;
+	font-weight: 300;
+}*/
+ul {
+  list-style-image: url(../img/iconmonstr-check-mark-thin-240.png);
+  height: 10%;
+}
+
 .biography {
+  position: absolute;
   padding: 1%;
   background-color: #f8f8f8;
 }
 
 .Test {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   background-image: linear-gradient(to right bottom, #30E8BF, #FF8235);
   position: relative;
-  top: -5%;
   border-radius: 0.5%;
 }
 .Test span {
@@ -25,34 +38,48 @@
 .Test--long-copy {
   font-family: "Lato";
   font-size: 100%;
-  text-align: justify;
+  text-align: center;
   padding: 1%;
   line-height: 2rem;
 }
 
-.IUJO {
-  background-image: linear-gradient(rgba(62, 67, 72, 0.7), rgba(62, 67, 72, 0.7)), url(/../../css/resources/img/computer-1245714_640.jpg);
-  height: 55%;
+.flex {
+  display: flex;
+  background-color: gray;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: normal;
 }
-.IUJO--medium-copy {
-  text-align: justify;
-  padding: 1%;
-  line-height: 1.5rem;
+.flex--child__first {
+  padding: 5px;
+  margin: 5px;
+  background-color: orangered;
+  flex-flow: wrap;
 }
-.IUJO--icon {
+.flex--child__first--tittle {
   text-align: center;
-  font-size: 255%;
-  width: 35%;
-  margin-left: 33%;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
+}
+.flex--child__first--descripcion {
+  text-align: justify;
 }
 
-.IUJO h3 {
-  color: #f1f2f6;
-  font-family: "Lato";
-  font-size: 100%;
-  text-align: center;
+.child--1 {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.child--2 {
+  order: 2;
+}
+.child--2__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.child--3 {
+  order: 3;
 }
 
 .presentacion-img {
@@ -69,15 +96,14 @@
 }
 
 .iconos-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   color: #f1f2f6;
   font-size: 255%;
-  border-bottom: 1px solid orangered;
-  text-align: center;
 }
 .iconos-header li {
   list-style: none;
-  display: inline;
-  word-spacing: 5%;
 }
 
 .main__nav {
@@ -99,6 +125,46 @@
 .main__nav--list a:hover {
   color: ivory;
   font-weight: 300;
+}
+
+.habilities {
+  position: relative;
+  padding: 1%;
+  background-color: #f8f8f8;
+  height: 70vh;
+  margin-top: 55%;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+.habilities--first {
+  background-color: orangered;
+}
+
+.tables {
+  margin-left: 25%;
+  padding-bottom: 2%;
+}
+.tables--complete {
+  background-color: cadetblue;
+  border-radius: 5%;
+}
+.tables--header {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  color: #3E4348;
+  text-align: center;
+}
+.tables--descripcion ul {
+  list-style: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 100%;
+  color: #f1f2f6;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.tables--description ul {
+  border-bottom: 1px red solid;
 }
 
 header {
