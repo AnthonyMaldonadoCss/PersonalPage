@@ -3,16 +3,31 @@
     padding: 1%;
 	background-color: #f8f8f8;
 }
+@mixin position_center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
-@mixin position_center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+@mixin tittles {
+	text-align: center;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	color: $text-color-primary;
 }
-@mixin position_center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+@mixin secondary-text {
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: $text-color;
+	text-align: center;
 }
+/*@mixin general-tables {
+	list-style: none;
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 100%;
+	color:$text-color-primary;
+	font-weight: 300;
+}*/

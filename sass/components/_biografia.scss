@@ -1,6 +1,7 @@
 ul {
-  list-style-image: url(../img/iconmonstr-check-mark-thin-240.png);
+  // list-style-image: url(../img/iconmonstr-check-mark-thin-240.png);
   height: 10%;
+  list-style: none;
 }
 .biography {
   position: absolute;
@@ -50,7 +51,7 @@ ul {
   &--child__first {
     padding: 5px;
     margin: 5px;
-    background-color: orangered;
+    background-color: rgb(156, 146, 142);
     flex-flow: wrap;
   }
   &--child__first--tittle {
@@ -81,5 +82,17 @@ ul {
 
   &--3 {
     order: 3;
+  }
+}
+.card {
+  &__tittle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
   }
 }

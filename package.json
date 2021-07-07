@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "pagina personal",
   "main": "index.js",
-  "dependencies": {
-    "sass": "^1.32.7"
+  "devDependencies": {
+    "sass": "^1.32.12"
   },
-  "devDependencies": {},
   "scripts": {
     "compile:sass": "sass --watch sass/main.scss css/resources/css/style.css"
   },
