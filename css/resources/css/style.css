@@ -7,8 +7,8 @@
 	font-weight: 300;
 }*/
 ul {
-  list-style-image: url(../img/iconmonstr-check-mark-thin-240.png);
   height: 10%;
+  list-style: none;
 }
 
 .biography {
@@ -53,7 +53,7 @@ ul {
 .flex--child__first {
   padding: 5px;
   margin: 5px;
-  background-color: orangered;
+  background-color: #9c928e;
   flex-flow: wrap;
 }
 .flex--child__first--tittle {
@@ -80,6 +80,17 @@ ul {
 }
 .child--3 {
   order: 3;
+}
+
+.card__tittle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card__description {
+  display: flex;
+  align-items: center;
 }
 
 .presentacion-img {
