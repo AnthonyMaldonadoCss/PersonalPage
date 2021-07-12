@@ -1,18 +1,21 @@
+.header_body {
+  height: 100vh;
+}
 .presentacion-img {
-    @include position_center; 
+  @include position_center;
 }
 .presentacion-text {
-   color: $text-color-primary;
-   font-family: 'Lato'; 
-    text-align: center;
+  color: $text-color-primary;
+  font-family: "Lato";
+  text-align: center;
 }
 .iconos-header {
-     display: flex;
-     flex-flow: row;
-     justify-content: space-between;
-    color: $text-color-primary;
-    font-size: 255%;
-    & li {
-        list-style: none;
-    }
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: $text-color-primary;
+  font-size: 255%;
+  & li {
+    list-style: none;
+  }
 }
