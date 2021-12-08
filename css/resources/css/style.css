@@ -190,10 +190,14 @@ ul {
 .redes__link--final a {
   color: white;
   font-size: 105%;
+  transition: all 0.3s;
 }
 .redes__link--final a:hover {
   color: green;
   font-weight: 800;
+  background-color: rgba(41, 77, 177, 0.863);
+  padding: 2px;
+  transform: rotate3d(1, 1, 1, 19deg);
 }
 
 .main__nav {
@@ -227,10 +231,28 @@ ul {
 }
 .experiencia .card {
   flex-basis: 20%;
-  border: 1px solid red;
   border-radius: 5px;
   padding: 5px;
   box-shadow: red 10px 10px 10px;
+  border: 1px solid red;
+  transition: all 0.3s;
+}
+.experiencia .card .toggle {
+  height: 0;
+  padding: 0em;
+  overflow: hidden;
+  transition: all 0.5s;
+  display: none;
+}
+.experiencia .card:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.486);
+}
+.experiencia .ghost {
+  visibility: hidden;
+}
+.experiencia .activo {
+  display: block;
 }
 
 .habilities {
