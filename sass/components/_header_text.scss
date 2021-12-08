@@ -1,5 +1,5 @@
 .header_body {
-  height: 100vh;
+  height: 90vh;
 }
 .presentacion-img {
   @include position_center;
@@ -7,7 +7,9 @@
 .presentacion-text {
   color: $text-color-primary;
   font-family: "Lato";
-  text-align: center;
+  text-align: left;
+
+  letter-spacing: 1px;
 }
 .iconos-header {
   display: flex;
@@ -18,4 +20,44 @@
   & li {
     list-style: none;
   }
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.presentacion-perfil{
+  flex-basis: 50%;
+}
+.presentacion-text{
+  flex-basis: 50%;
+}
+
+.redes__link{
+ 
+  & div:nth-child(2){
+    margin-top: 35px;
+  }
+}
+.redes__link--final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  & a{
+    // text-decoration: none;
+    color: white;
+    font-size: 105%;
+  }
+
+  & a:hover{
+    color: green;
+    font-weight: 800;
+  }
+
 }
