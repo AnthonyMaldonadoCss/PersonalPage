@@ -11,6 +11,27 @@ ul {
   list-style: none;
 }
 
+.biography {
+  background-color: rgba(128, 128, 128, 0.486);
+  border-radius: 5px;
+}
+.biography .sobre__mi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-items: stretch;
+  padding: 20px 0 20px 0;
+}
+.biography .sobre__mi div {
+  flex-basis: 30%;
+  border: red 1px solid;
+  border-radius: 5px;
+  background-color: khaki;
+  padding: 5px;
+}
+
 .Test {
   font-family: "Lato", sans-serif;
   background-image: linear-gradient(to right bottom, #30E8BF, #FF8235);
@@ -111,12 +132,12 @@ ul {
 }
 
 .header_body {
-  height: 100vh;
+  height: 90vh;
 }
 
 .presentacion-img {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
   transform: translate(-55%, -50%);
 }
@@ -124,7 +145,8 @@ ul {
 .presentacion-text {
   color: #f1f2f6;
   font-family: "Lato";
-  text-align: center;
+  text-align: left;
+  letter-spacing: 1px;
 }
 
 .iconos-header {
@@ -136,6 +158,42 @@ ul {
 }
 .iconos-header li {
   list-style: none;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.presentacion-perfil {
+  flex-basis: 50%;
+}
+
+.presentacion-text {
+  flex-basis: 50%;
+}
+
+.redes__link div:nth-child(2) {
+  margin-top: 35px;
+}
+
+.redes__link--final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.redes__link--final a {
+  color: white;
+  font-size: 105%;
+}
+.redes__link--final a:hover {
+  color: green;
+  font-weight: 800;
 }
 
 .main__nav {
@@ -159,10 +217,26 @@ ul {
   font-weight: 300;
 }
 
+.experiencia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 10px;
+}
+.experiencia .card {
+  flex-basis: 20%;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: red 10px 10px 10px;
+}
+
 .habilities {
   position: relative;
   padding: 1%;
-  background-color: #f8f8f8;
+  background-color: #919191;
   height: 70vh;
   margin-top: 55%;
   font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -201,7 +275,7 @@ ul {
 
 .header_body {
   background-size: cover;
-  height: 33rem;
+  /*height: 33rem;*/
   background-blend-mode: darken;
   padding: 2%;
   overflow: hidden;
