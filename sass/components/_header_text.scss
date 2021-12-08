@@ -53,11 +53,16 @@
     // text-decoration: none;
     color: white;
     font-size: 105%;
+    transition: all .3s;
+    
   }
 
   & a:hover{
     color: green;
     font-weight: 800;
+    background-color: rgba(41, 77, 177, 0.863);
+    padding: 2px;
+    transform: rotate3d(1, 1, 1, 19deg);
   }
 
 }
