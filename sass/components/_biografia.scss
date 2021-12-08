@@ -6,6 +6,28 @@ ul {
 .biography {
   // position: absolute;
   // @include backdoor;
+  background-color: rgba(128, 128, 128, 0.486);
+  border-radius: 5px;
+
+  & .sobre__mi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-items: stretch;
+
+    padding: 20px 0 20px 0;
+
+
+    & div{
+      flex-basis: 30%;
+      border: red 1px solid;
+      border-radius: 5px;
+      background-color: khaki;
+      padding: 5px;
+    }
+  }
 }
 .Test {
   font-family: "Lato", sans-serif;
