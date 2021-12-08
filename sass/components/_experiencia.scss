@@ -1,0 +1,21 @@
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    padding: 10px;
+
+    & .card{
+        flex-basis: 20%;
+        border: 1px solid red;
+        border-radius: 5px;
+        
+        padding: 5px;
+
+        box-shadow: red 10px 10px 10px;
+
+        
+    }
+}
