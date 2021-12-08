@@ -137,7 +137,7 @@ ul {
 
 .presentacion-img {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-55%, -50%);
 }
@@ -258,7 +258,7 @@ ul {
 .habilities {
   position: relative;
   padding: 1%;
-  background-color: #919191;
+  background-color: #f8f8f8;
   height: 70vh;
   margin-top: 55%;
   font-family: "Lato", Arial, Helvetica, sans-serif;
